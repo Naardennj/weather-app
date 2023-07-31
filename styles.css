@@ -30,7 +30,7 @@ body {
     display: flex;
     border-radius: 25px;
     justify-content: center;
-    background: url("1.jpg");
+    background: url("./img/1.jpg");
     background-position: center;
     background-size: cover;
     transform: scale(1.03) perspective(200px);
@@ -156,6 +156,16 @@ body {
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     transition: all 0.3s ease;
+}
+
+::placeholder {
+    color: #fff;
+    text-align: center;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: 0.2s;
 }
 
 .loc-button:hover {
